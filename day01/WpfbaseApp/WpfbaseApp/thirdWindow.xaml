@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfbaseApp.thirdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfbaseApp"
+        mc:Ignorable="d"
+        Title="thirdWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Ellipse Width="100" Height="50" Fill="AliceBlue" Stroke="DarkBlue"
+                 StrokeThickness="3" />
+        <Rectangle Width="100" Height="50" Fill="LightGreen" Stroke="DarkGreen"
+                   StrokeThickness="4"/>
+        <Path Width="200" Height="30"/>
+        <Path Fill="Blue"/>
+        <ToggleButton Content="togglebutton" Width="150" Height="30"/>
+        <CheckBox Content="chackbox"/>
+        <RadioButton Content="radiobutton"/>
+        <Button Padding="10" Width="150" Height="50">
+            <Image Source="/image/cat.png"></Image>
+        </Button>
+        <Button Width="150">
+            <CheckBox Content="check me"/>
+        </Button>
+        <Border Background="Orange" Padding="5" Width="220" CornerRadius="10">
+            <Button Content="orange butten" Width="200" Height="30"/>
+        </Border>
+        <Border Background="Blue" Padding="5" Width="220" CornerRadius="10,0,10,0">
+            <Button Content="orange butten" Width="200" Height="30"/>
+        </Border>
+    </StackPanel>
+            
+        <StackPanel Grid.Column="1">
+            <ScrollViewer Height="300" Width="300" Margin="48,0" 
+                          HorizontalScrollBarVisibility="Visible"
+                          VerticalScrollBarVisibility="Visible">
+                <Image Source="/image/cat.png" Width="250" Height="250"/>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+
+</Window>
